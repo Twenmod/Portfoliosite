@@ -1,0 +1,115 @@
+
+/* hihihiha google stealing your information */
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Press+Start+2P&family=Ubuntu+Mono:wght@700&display=swap');
+
+body {
+    padding: 0;
+    margin: 20px;
+    background-image: url("../images/background.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #950952;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+#Title {
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
+    background-color: #B796AC;
+    height: calc(50vh - 40px);
+    width: 95%;
+    font-size: 1000%;
+    line-height: calc(50vh - 40px);
+    padding-left: 5%;
+    
+}
+#Projects {
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
+    background-color: #B796AC;
+    height: calc(50vh - 40px);
+    width: 95%;
+    font-size: 500%;
+    line-height: calc(50vh - 40px);
+    padding-left: 5%;
+    
+}
+
+
+#Title.Titlescrolled {
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
+    height: 20vh;
+    line-height: 25vh;
+}
+#Catogories {
+    margin-top: 20px;
+    height: 100vh;
+    width: 100%;
+    display: block;
+}
+.catagory {
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+    align-self: center;
+    margin-left: 0%;
+    
+    height: 60vh;
+    width: 80%;
+    margin-top: 5px;
+    background-color: #4C9F70;
+    border-radius: 15px;
+    border-width: 10px;
+    border-color: #6dc593;
+    border-style: solid;
+    text-align: center;
+    line-height: 20vh;
+}
+.catagory:hover {
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+    width: 85%;
+    margin-left: 5%;
+    border-color: #81dfaa;
+
+}
+.catagory p {
+    height: 10vh;
+    line-height: 9vh;
+    font-size: 7vh;
+    margin-top: 15vh;
+    background-color: rgba(255,255,255,0.5);
+
+}
+#golfrush {
+    background-image: url("../images/Golfrush.png");
+    background-size: 100%;
+    background-attachment: scroll;
+    background-position-y: center;
+    font-family: 'Chango', cursive;
+}
+#jams {
+    background-image: url("../images/jellysplit.png");
+    background-size: 100%;
+    background-attachment: scroll;
+    background-position-y: center;
+    font-family: 'Press Start 2P', cursive;
+    border-color: #214a96;
+}
+#jams p {
+    background-color: rgba(67, 202, 255, 0.5);
+}
+#programming {
+    background-image: url("../images/coding.png");
+    background-size: 100%;
+    background-attachment: scroll;
+    background-position-y: 0;
+    font-family: 'Ubuntu Mono', monospace;
+    border-color: #445047;
+}
+#programming p {
+    background-color: rgba(163, 250, 155, 0.5);
+}
+
