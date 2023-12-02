@@ -33,12 +33,10 @@
         // so we can use it in our stylesheets
         const storeScroll = () => {
             document.getElementById("Title").dataset.scroll = window.scrollY;
-            if (scrollY > 125) {
-                    //document.getElementById("Title").className = "Titlescrolled";
-                    //document.getElementById("Catogories").className = "catascrolled";
+            if (scrollY > 1) {
+                    document.getElementById("Nav").className = "NavScrolled";
             }else {
-                document.getElementById("Title").className = "Title";
-                document.getElementById("Catogories").className = "";
+                    document.getElementById("Nav").className = "Nav";
             }
 
         }
@@ -50,23 +48,62 @@
             storeScroll();
         }
 
+        openedgolf = false
+        function openGolf() {
+            if (!openedgolf) {
+                openedgolf=true;
+                document.getElementById("golfcont").className = "open";
+            }else {
+                openedgolf=false;
+                document.getElementById("golfcont").className = "content";
+            }
+        }
+
+
     </script>
 
   
 </head>
 
 
+<body>
 
+    <nav class="Nav" id="Nav">
+        <a href="/">Portfolio</a>
+    </nav>
 
+    <div class="Main">
+        <div class="Title" id="Title">
+            <p>Big Projects</p>
+        </div>
+        <div id="projects">
+            <div class="project" id="projectgolfrush">
+                <div id="projecttitle">
+                    <a onclick="openGolf()"><p>Golf Rush</p></a>
+                </div>
+                <div id="golfcont"class="content">
+                    A really cool golf game
+                </div>
 
+            </div>
+            <div class="project" id="projectpws">
+                <div id="projecttitle">
+                    <a onclick="openPws()"><p>PWS Project</p></a>
+                </div>
+                <div id="pwscont"class="content">
+                    A really cool PWS
+                </div>
 
-<body >
+            </div>
+            <div class="project" id="projectabyss">
+                <div id="projecttitle">
+                    <a onclick="openAbyss()"><p>Abyssrite</p></a>
+                </div>
+                <div id="abysscont"class="content">
+                    A really cool abyss
+                </div>
 
-    <div class="Title" id="Projects" data-scroll="0">Big Projects</div>
-    <div id="Catogories">
-        <a href="/projects"><div href="/projects" class="catagory" id="golfrush"><p>Big projects</p></div></a>
-        <a href="/projects"><div href="/projects" class="catagory" id="jams"><p>Game jams</p></div></a>
-        <a href="/projects"><div href="/projects" class="catagory" id="programming"><p>Programming</p></div></a>
+            </div>
     </div>
   </body>
 

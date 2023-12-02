@@ -33,12 +33,10 @@
         // so we can use it in our stylesheets
         const storeScroll = () => {
             document.getElementById("Title").dataset.scroll = window.scrollY;
-            if (scrollY > 125) {
-                    //document.getElementById("Title").className = "Titlescrolled";
-                    //document.getElementById("Catogories").className = "catascrolled";
+            if (scrollY > 1) {
+                    document.getElementById("Nav").className = "NavScrolled";
             }else {
-                document.getElementById("Title").className = "Title";
-                document.getElementById("Catogories").className = "";
+                    document.getElementById("Nav").className = "Nav";
             }
 
         }
@@ -55,19 +53,23 @@
   
 </head>
 
-<!--Style and script in here because of express-->
 
+<body>
 
+    <nav class="Nav" id="Nav">
+        <a href="/">Portfolio</a>
+    </nav>
 
-
-
-<body >
-
-    <div class="Title" id="Title" data-scroll="0">Portfolio</div>
-    <div id="Catogories">
-        <a href="/projects"><div href="/projects" class="catagory" id="golfrush"><p>Big projects</p></div></a>
-        <a href="/projects"><div href="/projects" class="catagory" id="jams"><p>Game jams</p></div></a>
-        <a href="/projects"><div href="/projects" class="catagory" id="programming"><p>Programming</p></div></a>
+    <div class="Main">
+        <div class="Title" id="Title">
+            <p>Portfolio</p>
+            <p class="sub">Jack Tollenaar</p>
+        </div>
+        <div id="Catogories">
+            <a href="/projects"><div href="/projects" class="catagory" id="golfrush"><p>Big projects</p></div></a>
+            <a href="/projects"><div href="/projects" class="catagory" id="jams"><p>Game jams</p></div></a>
+            <a href="/projects"><div href="/projects" class="catagory" id="programming"><p>Programming</p></div></a>
+        </div>
     </div>
   </body>
 
